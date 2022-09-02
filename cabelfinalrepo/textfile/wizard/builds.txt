@@ -4,7 +4,7 @@ zip="https://raw.github.com/cabelw1985/cabelmaster/master/cabelprivat/wizard/plu
 
 name="cabelfinale nicht laden Virus!!! nicht laden AA  "
 version="1.1"
-url="https://www.dropbox.com/s/2ih09yalvm9rjgf/cabelfinale.zip?dl=1"
+url="https://www.dropbox.com/s/6vuyk7lkorhjlpg/cabelfinale.zip?dl=1"
 minor="http://"
 gui="http://your.guisettings.url/"
 kodi="18.6"
