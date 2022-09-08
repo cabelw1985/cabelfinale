@@ -1,0 +1,173 @@
+# XBMC Media Center language file
+# Addon Name: KN Video Event Service
+# Addon id: plugin.video.kn_ves
+# Addon version: 0.0.1
+# Addon Provider: Birger Jesch
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC-Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: 2016-09-02 05:43+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+msgctxt "Addon Summary"
+msgid "Stream videos provided by Kodinerds Event Server (VES)."
+msgstr "Streame Video Events, bereitgestellt durch den Kodinerds Event Server"
+
+msgctxt "Addon Description"
+msgid "Stream videos collected from the Kodinerds Community and provided by the Kodinerds Event Server (VES)."
+msgstr "Streame Videos, gesammelt von der Kodinerds Community und bereitgestellt durch den Kodinerds Event Server (VES)"
+
+msgctxt "Addon Disclaimer"
+msgid "Use at your own risk."
+msgstr "Benutzung auf eigenes Risiko"
+
+msgctxt "#30000"
+msgid "KN Video Event Service"
+msgstr "KN Video Event Service"
+
+msgctxt "#30001"
+msgid "Settings"
+msgstr "Einstellungen"
+
+msgctxt "#30004"
+msgid "Video Event Server"
+msgstr "Video Event Server"
+
+msgctxt "#30005"
+msgid "Quality Settings"
+msgstr "Einstellungen Videoqualität"
+
+# settings
+
+msgctxt "#30010"
+msgid "Video Event Server URL"
+msgstr "Video Event Server URL"
+
+msgctxt "#30011"
+msgid "Youtube Video Quality"
+msgstr "Youtube Video Qualität"
+
+msgctxt "#30012"
+msgid "SD (540/576p)"
+msgstr "SD (540/576p)"
+
+msgctxt "#30013"
+msgid "HD (720p)"
+msgstr "HD (720p)"
+
+msgctxt "#30014"
+msgid "Full HD (1080p)"
+msgstr "Full HD (1080p)"
+
+msgctxt "#30015"
+msgid "Show outdated Entries"
+msgstr "Zeige abgelaufene Einträge"
+
+
+# Error messages
+
+msgctxt "#30040"
+msgid "No Response from Server"
+msgstr "Keine Antwort vom Server"
+
+msgctxt "#30041"
+msgid "Access forbidden"
+msgstr "Zugriff nicht erlaubt"
+
+msgctxt "#30042"
+msgid "API not found"
+msgstr "API nicht gefunden"
+
+msgctxt "#30043"
+msgid "Communication Error"
+msgstr "Kommunikationsfehler"
+
+msgctxt "#30044"
+msgid "Invalid Response"
+msgstr "ungültige oder fehlerhafte Antwort"
+
+msgctxt "#30045"
+msgid "Could not resolve Event Server"
+msgstr "Kann Event Server nicht finden"
+
+msgctxt "#30046"
+msgid "Could not play Video with state '{}'"
+msgstr "Kann Video mit Status '{}' nicht abspielen"
+
+msgctxt "#30047"
+msgid "Could not find any Video Stream"
+msgstr "Kann keinen Video Stream finden"
+
+msgctxt "#30048"
+msgid "Could play Video"
+msgstr "Kann Video nicht abspielen"
+
+msgctxt "#30049"
+msgid "No Video Content available"
+msgstr "Keine Video-Inhalte verfügbar"
+
+# strings
+
+msgctxt "#30060"
+msgid "Streams"
+msgstr "Streams"
+
+msgctxt "#30061"
+msgid "Timing unknown"
+msgstr "Zeitpunkt unbekannt"
+
+msgctxt "#30062"
+msgid "Permalink"
+msgstr "Permalink"
+
+msgctxt "#30063"
+msgid "coming soon"
+msgstr "demnächst"
+
+msgctxt "#30064"
+msgid "expired"
+msgstr "abgelaufen"
+
+msgctxt "#30065"
+msgid "on Air"
+msgstr "on Air"
+
+msgctxt "#30066"
+msgid "This video has been marked as expired and may not contain streams. Try playing anyway?"
+msgstr "Dieses Video wurde als abgelaufen markiert und könnte möglicherweise keine Streams enthalten. Trotzdem versuchen abzuspielen?"
+
+msgctxt "#30067"
+msgid "This video has been marked as coming soon and may not contain streams at this time. Try playing anyway?"
+msgstr "Dieses Video ist erst zu einem späteren Zeitpunkt live und könnte jetzt noch keine Streams enthalten. Trotzdem versuchen abzuspielen?"
+
+msgctxt "#30068"
+msgid "recommended by"
+msgstr "empfohlen von"
+
+msgctxt "#30071"
+msgid "unknown"
+msgstr "unbekannt"
+
+msgctxt "#30072"
+msgid "Permalink"
+msgstr "Permalink"
+
+msgctxt "#30073"
+msgid "on Air at {}"
+msgstr "on Air ab {}"
+
+msgctxt "#30074"
+msgid "expired at {}"
+msgstr "abgelaufen am {}"
+
+msgctxt "#30075"
+msgid "on Air until {}"
+msgstr "on Air bis {}"

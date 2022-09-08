@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.kn_ves" version="0.1.3+matrix" name="KN Video Event Service" provider-name="Birger Jesch">
+<requires>
+  <import addon="xbmc.python" version="3.0.0"/>
+  <import addon="script.module.youtube.dl" version="20.906.0+matrix.1"/>
+  <import addon="script.module.requests" version="2.22.0"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="main.py">
+  <provides>video</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+  <summary lang="en">Kodi Client of the Kodinerds Event Server (VES).</summary>
+  <summary lang="de">Kodi Client des Kodinerds Event Servers (VES)</summary>
+  <description lang="en_GB">Stream online videos and events recommended by the Kodinerds Community and provided by the Kodinerds Event Server (VES).</description>
+  <description lang="de">Streame Online-Videos und Veranstaltungen, die von der Kodinerds Community empfohlen und vom Kodinerds Event Server (VES) bereitgestellt werden.</description>
+  <disclaimer lang="en_GB">Use at your own risk.</disclaimer>
+  <disclaimer lang="de">Benutzung auf eigenes Risiko</disclaimer>
+  <source>https://github.com/b-jesch/plugin.video.kn_ves/tree/Matrix</source>
+  <assets>
+    <icon>icon.png</icon>
+    <fanart>fanart.jpg</fanart>
+  </assets>
+  <news/>
+</extension>
+</addon>

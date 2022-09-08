@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <coordinates>
+        <left>0</left>
+        <top>0</top>
+    </coordinates>
+    <controls>
+        <control type="image">
+            <left>480</left>
+            <top>270</top>
+            <width>960</width>
+            <height>540</height>
+            <texture>https://kodi-unlimited-support.de/wizard/data/infobackgroundsmall.png</texture>
+        </control>
+		<control type="image">
+            <left>480</left>
+            <top>270</top>
+            <width>2</width>
+            <height>540</height>
+            <texture colordiffuse="deepskyblue">Button/testbuttonfo.png</texture>
+        </control>
+		<control type="image">
+            <left>480</left>
+            <top>270</top>
+            <width>960</width>
+            <height>2</height>
+            <texture colordiffuse="deepskyblue">Button/testbuttonfo.png</texture>
+        </control>
+		<control type="image">
+            <left>1438</left>
+            <top>270</top>
+            <width>2</width>
+            <height>540</height>
+            <texture colordiffuse="deepskyblue">Button/testbuttonfo.png</texture>
+        </control>
+		<control type="image">
+            <left>480</left>
+            <top>808</top>
+            <width>960</width>
+            <height>2</height>
+            <texture colordiffuse="deepskyblue">Button/testbuttonfo.png</texture>
+        </control>
+        <control type="label" id="504">
+           <left>500</left>
+           <top>290</top>
+           <width>940</width>
+           <height>40</height>
+           <font>font13</font>
+		   <textcolor>deepskyblue</textcolor>
+           <shadowcolor>black</shadowcolor>
+		   <align>center</align>
+           <aligny>center</aligny>
+        </control>
+        <control type="image" id="501">
+            <left>480</left>
+            <top>345</top>
+            <width>960</width>
+            <height>150</height>
+            <aspectratio aligny="center" align="center">keep</aspectratio>
+        </control>
+        <control type="textbox" id="502">
+            <left>500</left>
+            <top>465</top>
+            <width>920</width>
+            <height>400</height>
+            <font>font13</font>
+			<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+            <align>justify</align>
+            <aligny>top</aligny>
+        </control>
+        <control type="button" id="503">
+            <left>810</left>
+            <top>730</top>
+            <width>300</width>
+            <height>60</height>
+            <font>font12</font>
+            <textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+            <label>Schliessen</label>
+            <align>center</align>
+            <aligny>center</aligny>
+            <texturefocus colordiffuse="deepskyblue">Button/testbuttonfo.png</texturefocus>
+            <texturenofocus>Button/testbuttonnf.png</texturenofocus>
+        </control>
+    </controls>
+</window>
+

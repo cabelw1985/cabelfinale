@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" ?>
+<settings version="1">
+	<section id="plugin.video.spotitube">
+		<category id="api-key" label="30000" help="">
+			<group id="1" label="30230">
+				<setting id="pers_apiKey" type="string" label="30110" help="30350">
+					<level>0</level>
+					<default>AIzaSy.................................</default>
+					<control type="edit" format="string">
+						<heading>30110</heading>
+					</control>
+				</setting>
+			</group>
+			<group id="2"/>
+			<group id="3" label="30231">
+				<setting id="zz_dummy_01" type="string" label="30350" help="30350">
+					<level>0</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<control type="edit" format="string">
+						<heading>30350</heading>
+					</control>
+				</setting>
+				<setting id="zz_dummy_02" type="string" label="30351" help="30351">
+					<level>0</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<control type="edit" format="string">
+						<heading>30351</heading>
+					</control>
+				</setting>
+			</group>
+		</category>
+		<category id="allgemein" label="30001" help="">
+			<group id="1">
+				<setting id="blacklist" type="string" label="30111" help="">
+					<level>0</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<control type="edit" format="string">
+						<heading>30111</heading>
+					</control>
+				</setting>
+			</group>
+			<group id="2"/>
+			<group id="3" label="30232">
+				<setting id="cache_rhythm" type="integer" label="30112" help="">
+					<level>0</level>
+					<default>12</default>
+					<constraints>
+						<minimum>8</minimum>
+						<step>4</step>
+						<maximum>72</maximum>
+					</constraints>
+					<control type="slider" format="integer">
+						<popup>false</popup>
+					</control>
+				</setting>
+				<setting id="zz_dummy_03" type="action" label="30113" help="">
+					<level>0</level>
+					<data>RunPlugin(plugin://plugin.video.spotitube/?mode=trashCache)</data>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<control type="button" format="action">
+						<close>true</close>
+					</control>
+				</setting>
+			</group>
+			<group id="4"/>
+			<group id="5" label="30233">
+				<setting id="showInfo" type="boolean" label="30114" help="">
+					<level>0</level>
+					<default>true</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="infoType" type="integer" label="30115" help="">
+					<level>0</level>
+					<default>1</default>
+					<constraints>
+						<options>
+							<option label="VideoOSD">0</option>
+							<option label="Notification">1</option>
+						</options>
+					</constraints>
+					<dependencies>
+						<dependency type="enable">
+							<condition operator="is" setting="showInfo">true</condition>
+						</dependency>
+					</dependencies>
+					<control type="spinner" format="string"/>
+				</setting>
+				<setting id="infoDelay" type="integer" label="30116" help="">
+					<level>0</level>
+					<default>12</default>
+					<dependencies>
+						<dependency type="enable">
+							<condition operator="is" setting="showInfo">true</condition>
+						</dependency>
+					</dependencies>
+					<control type="edit" format="integer">
+						<heading>30116</heading>
+					</control>
+				</setting>
+				<setting id="infoDuration" type="integer" label="30117" help="">
+					<level>0</level>
+					<default>12</default>
+					<dependencies>
+						<dependency type="enable">
+							<condition operator="is" setting="showInfo">true</condition>
+						</dependency>
+					</dependencies>
+					<control type="edit" format="integer">
+						<heading>30117</heading>
+					</control>
+				</setting>
+			</group>
+			<group id="6"/>
+			<group id="7" label="30234">
+				<setting id="useThumbAsFanart" type="boolean" label="30118" help="">
+					<level>0</level>
+					<default>true</default>
+					<control type="toggle"/>
+				</setting>
+			</group>
+			<group id="8"/>
+			<group id="9" label="30235">
+				<setting id="show_settings" type="boolean" label="30119" help="">
+					<level>0</level>
+					<default>true</default>
+					<control type="toggle"/>
+				</setting>
+			</group>
+		</category>
+		<category id="suche" label="30002" help="">
+			<group id="1" label="30236">
+				<setting id="deezerSearch_count" type="integer" label="30120" help="30352">
+					<level>0</level>
+					<default>50</default>
+					<constraints>
+						<minimum>20</minimum>
+						<step>5</step>
+						<maximum>100</maximum>
+					</constraints>
+					<control type="slider" format="integer">
+						<popup>false</popup>
+					</control>
+				</setting>
+				<setting id="deezerVideos_count" type="integer" label="30121" help="30352">
+					<level>0</level>
+					<default>50</default>
+					<constraints>
+						<minimum>20</minimum>
+						<step>5</step>
+						<maximum>100</maximum>
+					</constraints>
+					<control type="slider" format="integer">
+						<popup>false</popup>
+					</control>
+				</setting>
+			</group>
+			<group id="2"/>
+			<group id="3" label="30237">
+				<setting id="zz_dummy_04" type="string" label="30352" help="30352">
+					<level>0</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<control type="edit" format="string">
+						<heading>30352</heading>
+					</control>
+				</setting>
+			</group>
+		</category>
+		<category id="services" label="30003" help="">
+			<group id="1" label="30238">
+				<setting id="itunesShowSubGenres" type="boolean" label="30122" help="">
+					<level>0</level>
+					<default>true</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="itunesForceCountry" type="boolean" label="30123" help="">
+					<level>0</level>
+					<default>false</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="itunesCountry" type="string" label="30124" help="">
+					<level>0</level>
+					<default/>
+					<constraints>
+						<allowempty>true</allowempty>
+					</constraints>
+					<dependencies>
+						<dependency type="enable">
+							<condition operator="is" setting="itunesForceCountry">true</condition>
+						</dependency>
+					</dependencies>
+					<control type="edit" format="string">
+						<heading>30124</heading>
+					</control>
+				</setting>
+			</group>
+		</category>
+		<category id="ansicht" label="30004" help="">
+			<group id="1" label="30239">
+				<setting id="forceView" type="boolean" label="30125" help="">
+					<level>0</level>
+					<default>false</default>
+					<control type="toggle"/>
+				</setting>
+				<setting id="viewIDGenres" type="integer" label="30126" help="" parent="forceView">
+					<level>0</level>
+					<default>500</default>
+					<dependencies>
+						<dependency type="enable">
+							<condition operator="is" setting="forceView">true</condition>
+						</dependency>
+					</dependencies>
+					<control type="edit" format="integer">
+						<heading>30126</heading>
+					</control>
+				</setting>
+				<setting id="viewIDPlaylists" type="integer" label="30127" help="" parent="viewIDGenres">
+					<level>0</level>
+					<default>500</default>
+					<dependencies>
+						<dependency type="enable">
+							<condition operator="is" setting="forceView">true</condition>
+						</dependency>
+					</dependencies>
+					<control type="edit" format="integer">
+						<heading>30127</heading>
+					</control>
+				</setting>
+				<setting id="viewIDVideos" type="integer" label="30128" help="" parent="viewIDPlaylists">
+					<level>0</level>
+					<default>500</default>
+					<dependencies>
+						<dependency type="enable">
+							<condition operator="is" setting="forceView">true</condition>
+						</dependency>
+					</dependencies>
+					<control type="edit" format="integer">
+						<heading>30128</heading>
+					</control>
+				</setting>
+			</group>
+		</category>
+	</section>
+</settings>

@@ -1,0 +1,76 @@
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# My Radiostations - Part of TuneIn2017
+#
+#	Format:
+#		# comment line
+#		# Stream-Url must start with http
+#		# Stream-Url can be a single url or a link to stream lists (.m3u or .pls)
+#
+#		My Station 1 | http://mystreamurl1.com:8000
+#		My Station 2 | http://mystreamurl2.com/listen.m3u
+#				
+#
+#	Place your own copy in addon or outside and put the path in preferences
+#	(complete path to My Radiostations).
+#	Add / remove entries as you like.
+#	
+#	If you want start only with this stations switch the option in addon-settings.
+
+# 	Not compatible formats: mmsh://..., .asf
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################################
+# ##################### Mix -mp3-streams from german stations #######################
+NDR 90.3 Hamburg Sounds | https://icecast.ndr.de/ndr/ndr903/hamburg/mp3/128/stream.mp3
+NDR 1 Niedersachsen | https://icecast.ndr.de/ndr/ndr1niedersachsen/lueneburg/mp3/128/stream.mp3	
+NDR 1 Welle Nord |  https://icecast.ndr.de/ndr/ndr1wellenord/norderstedt/mp3/128/stream.mp3
+
+RBB 88.8 | https://dispatcher.rndfnk.com/rbb/rbb888/live/mp3/mid
+RBB Kultur | https://dispatcher.rndfnk.com/rbb/rbbkultur/live/mp3/high
+
+SWR3 | https://liveradio.swr.de/sw282p3/swr3/play.mp3
+SWR4 | https://liveradio.swr.de/sw282p3/swr4tr/play.mp3
+
+HR 3 | https://dispatcher.rndfnk.com/hr/hr3/live/mp3/high?aggregator=ard-at
+HR 1 | https://dispatcher.rndfnk.com/hr/hr1/live/mp3/high?aggregator=ard-at
+
+Bayern 1 | https://dispatcher.rndfnk.com/br/br1/franken/mp3/mid?aggregator=ard-at
+Bayern 3 | https://dispatcher.rndfnk.com/br/br3/live/mp3/mid?aggregator=ard-at
+
+######################################################################################
+# ##################### Mix - different playlist/audio formats #######################
+#
+BFBS Radio 1  | http://tx.sharp-stream.com/icecast.php?i=ssvcbfbs1.aac   
+BFBS Radio 2 | http://tx.sharp-stream.com/icecast.php?i=ssvcbfbs2.aac   
+BFBS Gibraltar | http://tx.sharp-stream.com/icecast.php?i=ssvcbfbs7.aac  
+BFBS Scotland (Schottland) | http://tx.sharp-stream.com/icecast.php?i=ssvcbfbs18.aac
+#
+Atlantic Sound Factory | http://ais-sa2.cdnstream1.com/2279_128.mp3
+#
+Radio X (Basel) | http://mp3.radiox.ch/standard.mp3	
+#
+Frequence 3 (France) | https://frequence3.net-radio.fr/frequence3-64.aac
+#
+Dolfijn FM (Germany) | http://85.214.231.253:8080/stream.mp3
+Querfunk  (Germany, Karlsruhe) | http://mp3.querfunk.de/qfhi
+Radio Unerhört Marburg (Germany) | http://stream.radio-rum.de:8000/rum.mp3.m3u
+bigFM (Berlin) | https://audiotainment-sw.streamabc.net/atsw-bigfmberlin-mp3-128-8926421?sABC=62pnrs5p%230%233948so65os838pn972qp67n19832n8n7%23gharva&aw_0_1st.playerid=tunein&amsparams=playerid:tunein;skey:1657466716
+#
+# 1 Flac-Stream:
+Radio Paradise Rock (Flac) |http://stream.radioparadise.com/rock-flac 
+ 
+
+
+
+
+
+
+
+
+
+
+
+

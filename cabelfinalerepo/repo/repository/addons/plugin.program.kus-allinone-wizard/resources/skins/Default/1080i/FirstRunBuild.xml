@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol>201</defaultcontrol>
+    <coordinates>
+        <left>0</left>
+        <top>0</top>
+    </coordinates>
+    <controls>
+        <control type="group">
+            <control type="image">
+                <left>480</left>
+                <top>270</top>
+                <width>960</width>
+                <height>540</height>
+                <texture>https://kodi-unlimited-support.de/wizard/data/infobackgroundsmall.png</texture>
+            </control>
+			<control type="image">
+                <left>480</left>
+                <top>270</top>
+                <width>2</width>
+                <height>540</height>
+                <texture colordiffuse="deepskyblue">Button/testbuttonfo.png</texture>
+            </control>
+			<control type="image">
+                <left>480</left>
+                <top>270</top>
+                <width>960</width>
+                <height>2</height>
+                <texture colordiffuse="deepskyblue">Button/testbuttonfo.png</texture>
+            </control>
+			<control type="image">
+                <left>1438</left>
+                <top>270</top>
+                <width>2</width>
+                <height>540</height>
+                <texture colordiffuse="deepskyblue">Button/testbuttonfo.png</texture>
+            </control>
+			<control type="image">
+                <left>480</left>
+                <top>808</top>
+                <width>960</width>
+                <height>2</height>
+                <texture colordiffuse="deepskyblue">Button/testbuttonfo.png</texture>
+            </control>
+            <control type="label">
+                <description>header label</description>
+                <left>500</left>
+                <top>290</top>
+                <width>940</width>
+                <height>40</height>
+                <font>font13</font>
+                <label>KUS AllInOne Wizard</label>
+				<textcolor>deepskyblue</textcolor>
+				<shadowcolor>black</shadowcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+            </control>
+			<control type="textbox">
+                <left>500</left>
+                <width>920</width>
+				<top>350</top>
+                <height>400</height>
+                <font>font13</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<label>Schön das du unseren Wizard benutzt! Aktuell hast du kein Build von uns installiert...[CR]Wähle [COLORlime][Build Menü][/COLOR] um ein Build von uns mit nur wenigen Klicks zu installieren oder [COLORred][Abbrechen][/COLOR] um das Fenster zu schließen.[CR]Du kannst auch später noch via Benutzer-Addons > Programm-Addons > KUS AllInOne Wizard manuell ein Build von uns installieren.[CR][CR]Viel Spaß mit unseren Builds![CR][COLORdeepskyblue]Team K.U.S[/COLOR]</label>
+                <align>justify</align>
+                <aligny>top</aligny>
+            </control>
+            <control type="textbox" id="103">
+                <left>20</left>
+                <top>70</top>
+                <width>860</width>
+                <height>230</height>
+                <font>font10</font>
+                <align>left</align>
+                <aligny>top</aligny>
+            </control>
+        </control>
+        <control type="group">
+            <control type="button" id="201">
+                <left>500</left>
+                <top>730</top>
+                <width>310</width>
+                <height>60</height>
+                <font>font12</font>
+                <textcolor>lime</textcolor>
+				<focusedcolor>lime</focusedcolor>
+				<shadowcolor>black</shadowcolor>
+                <label>Build Menü</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <texturefocus colordiffuse="deepskyblue">Button/testbuttonfo.png</texturefocus>
+                <texturenofocus>Button/testbuttonnf.png</texturenofocus>
+                <onleft>202</onleft>
+                <onright>202</onright>
+            </control>
+            <control type="button" id="202">
+                <left>1110</left>
+                <top>730</top>
+                <width>310</width>
+                <height>60</height>
+                <font>font12</font>
+                <textcolor>red</textcolor>
+				<focusedcolor>red</focusedcolor>
+				<shadowcolor>black</shadowcolor>
+                <label>Abbrechen</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <texturefocus colordiffuse="deepskyblue">Button/testbuttonfo.png</texturefocus>
+                <texturenofocus>Button/testbuttonnf.png</texturenofocus>
+                <onleft>201</onleft>
+                <onright>201</onright>
+            </control>
+        </control>
+    </controls>
+</window>

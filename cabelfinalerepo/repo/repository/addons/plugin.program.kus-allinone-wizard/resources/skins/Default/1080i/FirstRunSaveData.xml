@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <coordinates>
+        <left>0</left>
+        <top>0</top>
+    </coordinates>
+    <controls>
+        <control type="group">
+            <control type="image">
+                <description>Background Image</description>
+                <left>480</left>
+                <top>270</top>
+                <width>960</width>
+                <height>540</height>
+                <texture>https://kodi-unlimited-support.de/wizard/data/infobackgroundsmall.png</texture>
+            </control>
+			<control type="image">
+                <left>480</left>
+                <top>270</top>
+                <width>2</width>
+                <height>540</height>
+                <texture colordiffuse="deepskyblue">Button/testbuttonfo.png</texture>
+            </control>
+			<control type="image">
+                <left>480</left>
+                <top>270</top>
+                <width>960</width>
+                <height>2</height>
+                <texture colordiffuse="deepskyblue">Button/testbuttonfo.png</texture>
+            </control>
+			<control type="image">
+                <left>1438</left>
+                <top>270</top>
+                <width>2</width>
+                <height>540</height>
+                <texture colordiffuse="deepskyblue">Button/testbuttonfo.png</texture>
+            </control>
+			<control type="image">
+                <left>480</left>
+                <top>808</top>
+                <width>960</width>
+                <height>2</height>
+                <texture colordiffuse="deepskyblue">Button/testbuttonfo.png</texture>
+            </control>
+           <control type="label" id="101">
+                <description>header label</description>
+                <left>500</left>
+                <top>290</top>
+                <width>940</width>
+                <height>40</height>
+                <font>font13</font>
+				<textcolor>deepskyblue</textcolor>
+                <shadowcolor>black</shadowcolor>
+				<label></label>
+                <align>center</align>
+                <aligny>center</aligny>
+            </control>
+            <control type="textbox" id="102">
+                <left>500</left>
+                <top>350</top>
+                <width>920</width>
+                <height>100</height>
+                <font>font13</font>
+                <align>Justify</align>
+                <aligny>top</aligny>
+                <label>Willst du Ersteinstellungen des Wizards vornehmen? Du kannst das später aber auch noch in den Wizard-Einstellungen ändern.</label>
+            </control>
+        </control>
+	    <control type="scrollbar" id="17">
+	      <left>1410</left>
+	      <top>430</top>
+	      <width>10</width>
+	      <height>285</height>
+	      <visible>true</visible>
+	      <texturesliderbarfocus colordiffuse="deepskyblue">Button/testbuttonfo.png</texturesliderbarfocus>
+	      <orientation>vertical</orientation>
+	      <showonepage>False</showonepage>
+	      <onleft>9000</onleft>
+	    </control>
+        <control type="grouplist" id="9000">
+            <left>500</left>
+            <top>430</top>
+            <width>940</width>
+            <height>285</height>
+            <itemgap>1</itemgap>
+            <align>top</align>
+            <pagecontrol>17</pagecontrol>
+            <orientation>vertical</orientation>
+            <onup>201</onup>
+            <ondown>201</ondown>
+            <onleft>201</onleft>
+            <onright>17</onright>
+            <control type="radiobutton" id="301">
+                <width>900</width>
+                <height>40</height>
+                <textwidth>875</textwidth>
+                <textoffsetx>10</textoffsetx>
+                <radioheight>45</radioheight>
+                <radioposx>820</radioposx>
+                <label>Behalte meine Trakt Daten</label>
+                <font>font13</font>
+                <texturefocus colordiffuse="deepskyblue">Button/testbuttonfo.png</texturefocus>
+                <texturenofocus>Button/testbuttonnf.png</texturenofocus>
+                <textureradioonfocus>RadioButton/radiobutton-focus.png</textureradioonfocus>
+                <textureradioonnofocus>RadioButton/radiobutton-focus.png</textureradioonnofocus>
+                <textureradioofffocus>RadioButton/radiobutton-focus.png</textureradioofffocus>
+                <textureradiooffnofocus colordiffuse="red">RadioButton/radiobutton-nofocus.png</textureradiooffnofocus>
+            </control>
+            <control type="radiobutton" id="302">
+                <width>900</width>
+                <height>40</height>
+                <textwidth>875</textwidth>
+                <textoffsetx>10</textoffsetx>
+                <radioheight>45</radioheight>
+                <radioposx>820</radioposx>
+                <label>Behalte meine Debrid Daten</label>
+                <font>font13</font>
+                <texturefocus colordiffuse="deepskyblue">Button/testbuttonfo.png</texturefocus>
+                <texturenofocus>Button/testbuttonnf.png</texturenofocus>
+                <textureradioonfocus>RadioButton/radiobutton-focus.png</textureradioonfocus>
+                <textureradioonnofocus>RadioButton/radiobutton-focus.png</textureradioonnofocus>
+                <textureradioofffocus>RadioButton/radiobutton-focus.png</textureradioofffocus>
+                <textureradiooffnofocus colordiffuse="red">RadioButton/radiobutton-nofocus.png</textureradiooffnofocus>
+            </control>
+            <control type="radiobutton" id="303">
+                <width>900</width>
+                <height>40</height>
+                <textwidth>875</textwidth>
+                <textoffsetx>10</textoffsetx>
+                <radioheight>45</radioheight>
+                <radioposx>820</radioposx>
+                <label>Behalte meine Login Daten</label>
+                <font>font13</font>
+                <texturefocus colordiffuse="deepskyblue">Button/testbuttonfo.png</texturefocus>
+                <texturenofocus>Button/testbuttonnf.png</texturenofocus>
+                <textureradioonfocus>RadioButton/radiobutton-focus.png</textureradioonfocus>
+                <textureradioonnofocus>RadioButton/radiobutton-focus.png</textureradioonnofocus>
+                <textureradioofffocus>RadioButton/radiobutton-focus.png</textureradioofffocus>
+                <textureradiooffnofocus colordiffuse="red">RadioButton/radiobutton-nofocus.png</textureradiooffnofocus>
+            </control>
+            <control type="radiobutton" id="304">
+                <width>900</width>
+                <height>40</height>
+                <textwidth>875</textwidth>
+                <textoffsetx>10</textoffsetx>
+                <radioheight>45</radioheight>
+                <radioposx>820</radioposx>
+                <label>Behalte meine Quellen [Source.xml]</label>
+                <font>font13</font>
+                <texturefocus colordiffuse="deepskyblue">Button/testbuttonfo.png</texturefocus>
+                <texturenofocus>Button/testbuttonnf.png</texturenofocus>
+                <textureradioonfocus>RadioButton/radiobutton-focus.png</textureradioonfocus>
+                <textureradioonnofocus>RadioButton/radiobutton-focus.png</textureradioonnofocus>
+                <textureradioofffocus>RadioButton/radiobutton-focus.png</textureradioofffocus>
+                <textureradiooffnofocus colordiffuse="red">RadioButton/radiobutton-nofocus.png</textureradiooffnofocus>
+            </control>
+            <control type="radiobutton" id="305">
+                <width>900</width>
+                <height>40</height>
+                <textwidth>875</textwidth>
+                <textoffsetx>10</textoffsetx>
+                <radioheight>45</radioheight>
+                <radioposx>820</radioposx>
+                <label>Behalte meine Profile [Profiles.xml]</label>
+                <font>font13</font>
+                <texturefocus colordiffuse="deepskyblue">Button/testbuttonfo.png</texturefocus>
+                <texturenofocus>Button/testbuttonnf.png</texturenofocus>
+                <textureradioonfocus>RadioButton/radiobutton-focus.png</textureradioonfocus>
+                <textureradioonnofocus>RadioButton/radiobutton-focus.png</textureradioonnofocus>
+                <textureradioofffocus>RadioButton/radiobutton-focus.png</textureradioofffocus>
+                <textureradiooffnofocus colordiffuse="red">RadioButton/radiobutton-nofocus.png</textureradiooffnofocus>
+            </control>
+            <control type="radiobutton" id="314">
+                <width>900</width>
+                <height>40</height>
+                <textwidth>875</textwidth>
+                <textoffsetx>10</textoffsetx>
+                <radioheight>45</radioheight>
+                <radioposx>820</radioposx>
+                <label>Behalte meine Playcorefactory [Playcorefactory.xml]</label>
+                <font>font13</font>
+                <texturefocus colordiffuse="deepskyblue">Button/testbuttonfo.png</texturefocus>
+                <texturenofocus>Button/testbuttonnf.png</texturenofocus>
+                <textureradioonfocus>RadioButton/radiobutton-focus.png</textureradioonfocus>
+                <textureradioonnofocus>RadioButton/radiobutton-focus.png</textureradioonnofocus>
+                <textureradioofffocus>RadioButton/radiobutton-focus.png</textureradioofffocus>
+                <textureradiooffnofocus colordiffuse="red">RadioButton/radiobutton-nofocus.png</textureradiooffnofocus>
+            </control>
+            <control type="radiobutton" id="315">
+                <width>900</width>
+                <height>40</height>
+                <textwidth>875</textwidth>
+                <textoffsetx>10</textoffsetx>
+                <radioheight>45</radioheight>
+                <radioposx>820</radioposx>
+                <label>Behalte meine Guisettings [Guisettings.xml]</label>
+                <font>font13</font>
+                <texturefocus colordiffuse="deepskyblue">Button/testbuttonfo.png</texturefocus>
+                <texturenofocus>Button/testbuttonnf.png</texturenofocus>
+                <textureradioonfocus>RadioButton/radiobutton-focus.png</textureradioonfocus>
+                <textureradioonnofocus>RadioButton/radiobutton-focus.png</textureradioonnofocus>
+                <textureradioofffocus>RadioButton/radiobutton-focus.png</textureradioofffocus>
+                <textureradiooffnofocus colordiffuse="red">RadioButton/radiobutton-nofocus.png</textureradiooffnofocus>
+            </control>
+            <control type="radiobutton" id="306">
+                <width>900</width>
+                <height>40</height>
+                <textwidth>875</textwidth>
+                <textoffsetx>10</textoffsetx>
+                <radioheight>45</radioheight>
+                <radioposx>820</radioposx>
+                <label>Behalte meine Advancedsettings [Advancedsettings.xml]</label>
+                <font>font13</font>
+                <texturefocus colordiffuse="deepskyblue">Button/testbuttonfo.png</texturefocus>
+                <texturenofocus>Button/testbuttonnf.png</texturenofocus>
+                <textureradioonfocus>RadioButton/radiobutton-focus.png</textureradioonfocus>
+                <textureradioonnofocus>RadioButton/radiobutton-focus.png</textureradioonnofocus>
+                <textureradioofffocus>RadioButton/radiobutton-focus.png</textureradioofffocus>
+                <textureradiooffnofocus colordiffuse="red">RadioButton/radiobutton-nofocus.png</textureradiooffnofocus>
+            </control>
+            <control type="radiobutton" id="307">
+                <width>900</width>
+                <height>40</height>
+                <textwidth>875</textwidth>
+                <textoffsetx>10</textoffsetx>
+                <radioheight>45</radioheight>
+                <radioposx>820</radioposx>
+                <label>Behalte meine Favoriten [Favourites.xml]</label>
+                <font>font13</font>
+                <texturefocus colordiffuse="deepskyblue">Button/testbuttonfo.png</texturefocus>
+                <texturenofocus>Button/testbuttonnf.png</texturenofocus>
+                <textureradioonfocus>RadioButton/radiobutton-focus.png</textureradioonfocus>
+                <textureradioonnofocus>RadioButton/radiobutton-focus.png</textureradioonnofocus>
+                <textureradioofffocus>RadioButton/radiobutton-focus.png</textureradioofffocus>
+                <textureradiooffnofocus colordiffuse="red">RadioButton/radiobutton-nofocus.png</textureradiooffnofocus>
+            </control>
+            <control type="radiobutton" id="308">
+                <width>900</width>
+                <height>40</height>
+                <textwidth>875</textwidth>
+                <textoffsetx>10</textoffsetx>
+                <radioheight>45</radioheight>
+                <radioposx>820</radioposx>
+                <label>Behalte meine Super Favourites</label>
+                <font>font13</font>
+                <texturefocus colordiffuse="deepskyblue">Button/testbuttonfo.png</texturefocus>
+                <texturenofocus>Button/testbuttonnf.png</texturenofocus>
+                <textureradioonfocus>RadioButton/radiobutton-focus.png</textureradioonfocus>
+                <textureradioonnofocus>RadioButton/radiobutton-focus.png</textureradioonnofocus>
+                <textureradioofffocus>RadioButton/radiobutton-focus.png</textureradioofffocus>
+                <textureradiooffnofocus colordiffuse="red">RadioButton/radiobutton-nofocus.png</textureradiooffnofocus>
+            </control>
+            <control type="radiobutton" id="309">
+                <width>900</width>
+                <height>40</height>
+                <textwidth>875</textwidth>
+                <textoffsetx>10</textoffsetx>
+                <radioheight>45</radioheight>
+                <radioposx>820</radioposx>
+                <label>Behalte meine Repos</label>
+                <font>font13</font>
+                <texturefocus colordiffuse="deepskyblue">Button/testbuttonfo.png</texturefocus>
+                <texturenofocus>Button/testbuttonnf.png</texturenofocus>
+                <textureradioonfocus>RadioButton/radiobutton-focus.png</textureradioonfocus>
+                <textureradioonnofocus>RadioButton/radiobutton-focus.png</textureradioonnofocus>
+                <textureradioofffocus>RadioButton/radiobutton-focus.png</textureradioofffocus>
+                <textureradiooffnofocus colordiffuse="red">RadioButton/radiobutton-nofocus.png</textureradiooffnofocus>
+            </control>
+            <control type="radiobutton" id="310">
+                <width>900</width>
+                <height>40</height>
+                <textwidth>875</textwidth>
+                <textoffsetx>10</textoffsetx>
+                <radioheight>45</radioheight>
+                <radioposx>820</radioposx>
+                <label>Behalte meine Whitelist Addons</label>
+                <font>font13</font>
+                <texturefocus colordiffuse="deepskyblue">Button/testbuttonfo.png</texturefocus>
+                <texturenofocus>Button/testbuttonnf.png</texturenofocus>
+                <textureradioonfocus>RadioButton/radiobutton-focus.png</textureradioonfocus>
+                <textureradioonnofocus>RadioButton/radiobutton-focus.png</textureradioonnofocus>
+                <textureradioofffocus>RadioButton/radiobutton-focus.png</textureradioofffocus>
+                <textureradiooffnofocus colordiffuse="red">RadioButton/radiobutton-nofocus.png</textureradiooffnofocus>
+            </control>
+            <control type="radiobutton" id="311">
+                <width>900</width>
+                <height>40</height>
+                <textwidth>875</textwidth>
+                <textoffsetx>10</textoffsetx>
+                <radioheight>45</radioheight>
+                <radioposx>820</radioposx>
+                <label>Cache beim Start bereinigen</label>
+                <font>font13</font>
+                <texturefocus colordiffuse="deepskyblue">Button/testbuttonfo.png</texturefocus>
+                <texturenofocus>Button/testbuttonnf.png</texturenofocus>
+                <textureradioonfocus>RadioButton/radiobutton-focus.png</textureradioonfocus>
+                <textureradioonnofocus>RadioButton/radiobutton-focus.png</textureradioonnofocus>
+                <textureradioofffocus>RadioButton/radiobutton-focus.png</textureradioofffocus>
+                <textureradiooffnofocus colordiffuse="red">RadioButton/radiobutton-nofocus.png</textureradiooffnofocus>
+            </control>
+            <control type="radiobutton" id="312">
+                <width>900</width>
+                <height>40</height>
+                <textwidth>875</textwidth>
+                <textoffsetx>10</textoffsetx>
+                <radioheight>45</radioheight>
+                <radioposx>820</radioposx>
+                <label>Packages beim Start bereinigen</label>
+                <font>font13</font>
+                <texturefocus colordiffuse="deepskyblue">Button/testbuttonfo.png</texturefocus>
+                <texturenofocus>Button/testbuttonnf.png</texturenofocus>
+                <textureradioonfocus>RadioButton/radiobutton-focus.png</textureradioonfocus>
+                <textureradioonnofocus>RadioButton/radiobutton-focus.png</textureradioonnofocus>
+                <textureradioofffocus>RadioButton/radiobutton-focus.png</textureradioofffocus>
+                <textureradiooffnofocus colordiffuse="red">RadioButton/radiobutton-nofocus.png</textureradiooffnofocus>
+            </control>
+            <control type="radiobutton" id="313">
+               <width>900</width>
+                <height>40</height>
+                <textwidth>875</textwidth>
+                <textoffsetx>10</textoffsetx>
+                <radioheight>45</radioheight>
+                <radioposx>820</radioposx>
+                <label>Alte Thumbnails beim Start bereinigen</label>
+                <font>font13</font>
+                <texturefocus colordiffuse="deepskyblue">Button/testbuttonfo.png</texturefocus>
+                <texturenofocus>Button/testbuttonnf.png</texturenofocus>
+                <textureradioonfocus>RadioButton/radiobutton-focus.png</textureradioonfocus>
+                <textureradioonnofocus>RadioButton/radiobutton-focus.png</textureradioonnofocus>
+                <textureradioofffocus>RadioButton/radiobutton-focus.png</textureradioofffocus>
+                <textureradiooffnofocus colordiffuse="red">RadioButton/radiobutton-nofocus.png</textureradiooffnofocus>
+            </control>
+        </control>
+        <control type="group" id="9001">
+            <control type="button" id="201">
+                <left>810</left>
+                <top>730</top>
+                <width>300</width>
+                <height>60</height>
+                <font>font13</font>
+                <textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+                <label>Weiter</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <onup>9000</onup>
+                <ondown>9000</ondown>
+                <texturefocus colordiffuse="deepskyblue">Button/testbuttonfo.png</texturefocus>
+                <texturenofocus>Button/testbuttonnf.png</texturenofocus>
+            </control>
+        </control>
+    </controls>
+</window>

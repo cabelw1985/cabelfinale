@@ -1,0 +1,1145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<controls>
+		<control type="image">
+			<left>1270r</left>
+			<top>0</top>
+			<width>1280</width>
+			<height>720</height>
+			<texture>$INFO[ListItem.Art(fanart)]</texture>
+		</control>
+		<control type="image">
+			<left>0</left>
+			<top>0</top>
+			<width>100%</width>
+			<height>100%</height>
+			<texture>backgrounds/fade_50.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
+		<control type="image">
+			<left>0</left>
+			<top>0</top>
+			<width>1920</width>
+			<height>1080</height>
+			<texture diffuse="backgrounds/backgrounddiffuse.png">$INFO[Skin.CurrentTheme,special://skin/extras/backgrounds/,.jpg]</texture>
+		</control>
+		<control type="image">
+			<left>0</left>
+			<top>0</top>
+			<width>1920</width>
+			<height>1080</height>
+			<texture diffuse="backgrounds/backgrounddiffuse.png">$INFO[Skin.String(CustomBackgroundPath)]</texture>
+			<visible>Skin.HasSetting(UseCustomBackground) + Skin.String(CustomBackgroundPath)</visible>
+		</control>
+		<control type="group">
+		<visible>!Skin.HasSetting(Touchmode)</visible>
+			<control type="image">
+				<right>20</right>
+				<top>95</top>
+				<width>60</width>
+				<height>60</height>
+				<texture colordiffuse="button.nf">backgrounds/white.png</texture>
+			</control>
+			<control type="button" id="998">
+				<right>15</right>
+				<top>90</top>
+				<width>70</width>
+				<height>70</height>
+				<label></label>
+				<font/>
+				<onclick>ActivateWindow(home)</onclick>
+				<texturefocus colordiffuse="$INFO[Skin.String(color.500)]">icons/home.png</texturefocus>
+				<texturenofocus colordiffuse="white">icons/home.png</texturenofocus>
+				<onleft>999</onleft>
+				<onright>8</onright>
+				<onup></onup>
+				<ondown></ondown>
+			</control>
+			<control type="image">
+				<right>100</right>
+				<top>95</top>
+				<width>60</width>
+				<height>60</height>
+				<texture colordiffuse="button.nf">backgrounds/white.png</texture>
+			</control>
+			<control type="button" id="999">
+				<right>95</right>
+				<top>90</top>
+				<width>70</width>
+				<height>70</height>
+				<label></label>
+				<font/>
+				<onclick>back</onclick>
+				<texturefocus colordiffuse="$INFO[Skin.String(color.500)]">icons/back.png</texturefocus>
+				<texturenofocus colordiffuse="white">icons/back.png</texturenofocus>
+				<onleft>10</onleft>
+				<onright>998</onright>
+				<onup></onup>
+				<ondown></ondown>
+			</control>
+		</control>
+		<control type="group">
+			<visible>!Skin.HasSetting(View50HideClock)</visible>
+			<visible>!Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)</visible>
+			<visible>!Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)</visible>
+			<control type="label">
+				<visible>!Skin.HasSetting(Shadow)</visible>
+				<top>122r</top>
+				<left>23</left>
+				<width>500</width>
+				<height>22</height>
+				<font>font14</font>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$INFO[System.Date]</label>
+				<textcolor>black</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<top>125r</top>
+				<left>20</left>
+				<width>500</width>
+				<height>22</height>
+				<font>font14</font>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$INFO[System.Date]</label>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<visible>!Skin.HasSetting(Shadow)</visible>
+				<top>77r</top>
+				<left>23</left>
+				<width>500</width>
+				<height>30</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font35_title</font>
+				<textcolor>black</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<label>$INFO[System.Time(hh:mm:ss)]</label>
+			</control>
+			<control type="label">
+				<top>80r</top>
+				<left>20</left>
+				<width>500</width>
+				<height>30</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font35_title</font>
+				<textcolor>$INFO[Skin.String(color.500)]</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<label>$INFO[System.Time(hh:mm:ss)]</label>
+			</control>
+		</control>
+		<control type="image">
+			<visible>!Skin.HasSetting(Shadow)</visible>
+			<left>5</left>
+			<top>938</top>
+			<width>1920</width>
+			<height>64</height>
+			<texture colordiffuse="black">menu_bar_views.png</texture>
+		</control>
+		<control type="image">
+			<left>0</left>
+			<top>935</top>
+			<width>1920</width>
+			<height>64</height>
+			<texture colordiffuse="$INFO[Skin.String(color.500)]">menu_bar_views.png</texture>
+		</control>
+		<control type="group">
+			<left>0</left>
+			<top>510</top>
+			<visible>Player.HasAudio + !Skin.HasSetting(homepageMusicinfo) + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
+			<control type="group">
+				<control type="label">
+					<left>20</left>
+					<top>440</top>
+					<height>38</height>
+					<width>560</width>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>breadcrumb</font>
+					<textcolor>$INFO[Skin.String(color.500)]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[Player.Title]</label>
+					<scroll>true</scroll>
+				</control>
+				<control type="label">
+					<left>20</left>
+					<top>470</top>
+					<height>38</height>
+					<width>560</width>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>breadcrumb.secondary</font>
+					<textcolor>$INFO[Skin.String(color.500)]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[MusicPlayer.Artist] [COLORwhite]$INFO[MusicPlayer.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]: ][/COLOR]</label>
+					<scroll>true</scroll>
+				</control>
+				<control type="label">
+					<left>20</left>
+					<top>500</top>
+					<height>38</height>
+					<width>560</width>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>breadcrumb.secondary</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[Player.Time] / $INFO[Player.Duration,]</label>
+					<scroll>true</scroll>
+				</control>
+			</control>
+		</control>
+		<control type="group">
+			<left>0</left>
+			<top>480</top>
+			<visible>Player.HasVideo + !Skin.HasSetting(homepageVideoinfo) + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
+				<control type="group">
+				<visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(LiveTV)</visible>
+				<control type="label">
+					<left>20</left>
+					<top>500</top>
+					<height>38</height>
+					<width>560</width>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>breadcrumb</font>
+					<textcolor>$INFO[Skin.String(color.500)]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[Player.Title]</label>
+					<scroll>true</scroll>
+				</control>
+				<control type="label">
+					<left>20</left>
+					<top>530</top>
+					<height>38</height>
+					<width>560</width>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>breadcrumb.secondary</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[Player.Time] / $INFO[Player.Duration,]</label>
+				</control>
+			</control>
+			<control type="group">
+				<visible>VideoPlayer.Content(LiveTV)</visible>
+				<control type="label">
+					<left>20</left>
+					<top>470</top>
+					<height>38</height>
+					<width>560</width>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>breadcrumb</font>
+					<textcolor>$INFO[Skin.String(color.500)]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[Player.Title]</label>
+					<scroll>true</scroll>
+				</control>
+				<control type="label">
+					<left>20</left>
+					<top>500</top>
+					<height>38</height>
+					<width>560</width>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>breadcrumb.secondary</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[VideoPlayer.ChannelName]</label>
+					<scroll>true</scroll>
+				</control>
+				<control type="label">
+					<left>20</left>
+					<top>530</top>
+					<height>38</height>
+					<width>560</width>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>breadcrumb.secondary</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[Player.Time] / $INFO[Player.Duration,]</label>
+				</control>
+			</control>
+			<control type="group">
+				<visible>VideoPlayer.Content(Movies)</visible>
+				<control type="label">
+					<left>20</left>
+					<top>470</top>
+					<height>38</height>
+					<width>560</width>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>breadcrumb</font>
+					<textcolor>$INFO[Skin.String(color.500)]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[Player.Title]</label>
+					<scroll>true</scroll>
+				</control>
+				<control type="label">
+					<left>20</left>
+					<top>500</top>
+					<height>38</height>
+					<width>560</width>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>breadcrumb.secondary</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[VideoPlayer.Studio]</label>
+					<scroll>true</scroll>
+				</control>
+				<control type="label">
+					<left>20</left>
+					<top>530</top>
+					<height>38</height>
+					<width>560</width>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>breadcrumb.secondary</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[Player.Time] / $INFO[Player.Duration,]</label>
+				</control>
+			</control>
+			<control type="group">
+				<visible>VideoPlayer.Content(Episodes)</visible>
+				<control type="label">
+					<left>20</left>
+					<top>470</top>
+					<height>38</height>
+					<width>560</width>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>breadcrumb</font>
+					<textcolor>$INFO[Skin.String(color.500)]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[Player.Title]</label>
+					<scroll>true</scroll>
+				</control>
+				<control type="label">
+					<left>20</left>
+					<top>500</top>
+					<height>38</height>
+					<width>560</width>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>breadcrumb.secondary</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[VideoPlayer.TVShowTitle] ($INFO[VideoPlayer.Season,$LOCALIZE[20373] , - ]$INFO[VideoPlayer.episode,$LOCALIZE[20359] ,])</label>
+					<scroll>true</scroll>
+				</control>
+				<control type="label">
+					<left>20</left>
+					<top>530</top>
+					<height>38</height>
+					<width>450</width>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>breadcrumb.secondary</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[Player.Time] / $INFO[Player.Duration,]</label>
+				</control>
+			</control>
+		</control>
+		<control type="group">
+			<left>20</left>
+			<width>1880</width>
+			<visible>!Window.IsActive(FileBrowser) + !Window.IsActive(SelectDialog)</visible>
+			<control type="grouplist" id="9000">
+				<top>20</top>
+				<width>1880</width>
+				<height>60</height>
+				<align>left</align>
+				<itemgap>10</itemgap>
+				<orientation>horizontal</orientation>
+				<onleft>9000</onleft>
+				<onright>9000</onright>
+				<onup>50</onup>
+				<ondown>50</ondown>
+				<control type="button" id="6">
+					<width>250</width>
+					<height>60</height>
+					<texturefocus colordiffuse="$INFO[Skin.String(color.500)]">backgrounds/white.png</texturefocus>
+					<texturenofocus colordiffuse="button.nf">backgrounds/white.png</texturenofocus>
+					<font>label</font>
+					<textcolor>white</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>center</align>
+					<label>208</label>
+					<onclick></onclick>
+					<onup>50</onup>
+					<ondown>50</ondown>
+					<onleft>7</onleft>
+					<onright>10</onright>
+				</control>
+				<control type="button" id="10">
+					<width>250</width>
+					<height>60</height>
+					<texturefocus colordiffuse="$INFO[Skin.String(color.500)]">backgrounds/white.png</texturefocus>
+					<texturenofocus colordiffuse="button.nf">backgrounds/white.png</texturenofocus>
+					<font>label</font>
+					<textcolor>white</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>center</align>
+					<label>208</label>
+					<onclick></onclick>
+					<onup>50</onup>
+					<ondown>50</ondown>
+					<onleft>6</onleft>
+					<onright>12</onright>
+				</control>
+				<control type="button" id="12">
+					<width>250</width>
+					<height>60</height>
+					<texturefocus colordiffuse="$INFO[Skin.String(color.500)]">backgrounds/white.png</texturefocus>
+					<texturenofocus colordiffuse="button.nf">backgrounds/white.png</texturenofocus>
+					<font>label</font>
+					<textcolor>white</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>center</align>
+					<label>208</label>
+					<onclick></onclick>
+					<onup>50</onup>
+					<ondown>50</ondown>
+					<onleft>10</onleft>
+					<onright>7</onright>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Container.Content(Albums)</visible>
+				<control type="image">
+					<visible>!Skin.HasSetting(Shadow)</visible>
+					<left>2</left>
+					<top>102</top>
+					<width>600</width>
+					<height>232</height>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="black">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.ClearLogo)]</texture>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>100</top>
+					<width>600</width>
+					<height>232</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[Window(Home).Property(SkinHelper.ListItem.Art.ClearLogo)]</texture>
+				</control>
+				<control type="label">
+					<visible>!Skin.HasSetting(Shadow)</visible>
+					<left>62</left>
+					<top>252</top>
+					<width>685</width>
+					<height>35</height>
+					<font>button2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>black</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>[B]$INFO[ListItem.Title][/B]</label>
+					<visible>!Container.Content(Episodes)</visible>
+					<visible>String.IsEmpty(Home).Property(SkinHelper.ListItem.Art.ClearLogo))</visible>
+					<scroll>true</scroll>
+				</control>
+				<control type="label">
+					<left>60</left>
+					<top>250</top>
+					<width>685</width>
+					<height>35</height>
+					<font>button2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>$INFO[Skin.String(color.500)]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>[B]$INFO[ListItem.Title][/B]</label>
+					<visible>!Container.Content(Episodes)</visible>
+					<visible>String.IsEmpty(Home).Property(SkinHelper.ListItem.Art.ClearLogo))</visible>
+					<scroll>true</scroll>
+				</control>
+				<control type="image">
+					<visible>!Skin.HasSetting(Shadow)</visible>
+					<left>2</left>
+					<top>342</top>
+					<width>35</width>
+					<height>35</height>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="black">icons/calendar.png</texture>
+					<visible>!String.IsEmpty(ListItem.Year)</visible>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>340</top>
+					<width>35</width>
+					<height>35</height>
+					<aspectratio>keep</aspectratio>
+					<texture>icons/calendar.png</texture>
+					<visible>!String.IsEmpty(ListItem.Year)</visible>
+				</control>
+				<control type="label">
+					<visible>!Skin.HasSetting(Shadow)</visible>
+					<left>62</left>
+					<top>342</top>
+					<width>650</width>
+					<height>35</height>
+					<font>button2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>black</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[Window(Home).Property(SkinHelper.ListItem.formed)]</label>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.formed))</visible>
+				</control>
+				<control type="label">
+					<left>60</left>
+					<top>340</top>
+					<width>650</width>
+					<height>35</height>
+					<font>button2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>$INFO[Skin.String(color.500)]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[Window(Home).Property(SkinHelper.ListItem.formed)]</label>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.formed))</visible>
+				</control>
+				<control type="image">
+					<visible>!Skin.HasSetting(Shadow)</visible>
+					<left>2</left>
+					<top>392</top>
+					<width>35</width>
+					<height>35</height>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="black">icons/clock.png</texture>
+					<visible>!String.IsEmpty(Home).Property(SkinHelper.ListItem.Duration))</visible>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>390</top>
+					<width>35</width>
+					<height>35</height>
+					<aspectratio>keep</aspectratio>
+					<texture>icons/clock.png</texture>
+					<visible>!String.IsEmpty(Home).Property(SkinHelper.ListItem.Duration))</visible>
+				</control>
+				<control type="label">
+					<visible>!Skin.HasSetting(Shadow)</visible>
+					<left>62</left>
+					<top>392</top>
+					<width>650</width>
+					<height>35</height>
+					<font>button2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>black</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[Window(Home).Property(SkinHelper.ListItem.Duration)]</label>
+				</control>
+				<control type="label">
+					<left>60</left>
+					<top>390</top>
+					<width>650</width>
+					<height>35</height>
+					<font>button2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>$INFO[Skin.String(color.500)]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[Window(Home).Property(SkinHelper.ListItem.Duration)]</label>
+				</control>
+				<control type="image">
+					<visible>!Skin.HasSetting(Shadow)</visible>
+					<left>2</left>
+					<top>442</top>
+					<width>35</width>
+					<height>35</height>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="black">icons/genre.png</texture>
+					<visible>!String.IsEmpty(ListItem.Genre)</visible>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>440</top>
+					<width>35</width>
+					<height>35</height>
+					<aspectratio>keep</aspectratio>
+					<texture>icons/genre.png</texture>
+					<visible>!String.IsEmpty(ListItem.Genre)</visible>
+				</control>
+				<control type="label">
+					<visible>!Skin.HasSetting(Shadow)</visible>
+					<left>62</left>
+					<top>442</top>
+					<width>685</width>
+					<height>35</height>
+					<font>button2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>black</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[ListItem.Genre]</label>
+					<scroll>true</scroll>
+				</control>
+				<control type="label">
+					<left>60</left>
+					<top>440</top>
+					<width>685</width>
+					<height>35</height>
+					<font>button2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>$INFO[Skin.String(color.500)]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[ListItem.Genre]</label>
+					<scroll>true</scroll>
+				</control>
+				<control type="image">
+					<visible>!Skin.HasSetting(Shadow)</visible>
+					<left>2</left>
+					<top>492</top>
+					<width>35</width>
+					<height>35</height>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="black">icons/favourites.png</texture>
+					<visible>!String.IsEmpty(ListItem.RatingAndVotes)</visible>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>490</top>
+					<width>35</width>
+					<height>35</height>
+					<aspectratio>keep</aspectratio>
+					<texture>icons/favourites.png</texture>
+					<visible>!String.IsEmpty(ListItem.RatingAndVotes)</visible>
+				</control>
+				<control type="label">
+					<visible>!Skin.HasSetting(Shadow)</visible>
+					<left>62</left>
+					<top>492</top>
+					<width>685</width>
+					<height>35</height>
+					<font>button2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>black</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[ListItem.RatingAndVotes]</label>
+				</control>
+				<control type="label">
+					<left>60</left>
+					<top>490</top>
+					<width>685</width>
+					<height>35</height>
+					<font>button2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>$INFO[Skin.String(color.500)]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[ListItem.RatingAndVotes]</label>
+				</control>
+				<control type="image">
+					<visible>!Skin.HasSetting(Shadow)</visible>
+					<left>2</left>
+					<top>542</top>
+					<width>35</width>
+					<height>35</height>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="black">icons/cd.png</texture>
+					<visible>!String.IsEmpty(Home).Property(SkinHelper.ListItem.albumlabel))</visible>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>540</top>
+					<width>35</width>
+					<height>35</height>
+					<aspectratio>keep</aspectratio>
+					<texture>icons/cd.png</texture>
+					<visible>!String.IsEmpty(Home).Property(SkinHelper.ListItem.albumlabel))</visible>
+				</control>
+				<control type="label">
+					<visible>!Skin.HasSetting(Shadow)</visible>
+					<left>62</left>
+					<top>542</top>
+					<width>685</width>
+					<height>35</height>
+					<font>button2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>black</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[Window(Home).Property(SkinHelper.ListItem.albumlabel)]</label>
+					<scroll>true</scroll>
+				</control>
+				<control type="label">
+					<left>60</left>
+					<top>540</top>
+					<width>685</width>
+					<height>35</height>
+					<font>button2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>$INFO[Skin.String(color.500)]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[Window(Home).Property(SkinHelper.ListItem.albumlabel)]</label>
+					<scroll>true</scroll>
+				</control>
+				<control type="image">
+					<left>2</left>
+					<top>752</top>
+					<width>750</width>
+					<height>140</height>
+					<texture colordiffuse="black">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Banner)]</texture>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>750</top>
+					<width>750</width>
+					<height>140</height>
+					<texture>$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Banner)]</texture>
+				</control>
+				<control type="image">
+					<visible>!Skin.HasSetting(Shadow)</visible>
+					<left>62</left>
+					<top>612</top>
+					<width>100</width>
+					<height>100</height>
+					<aspectratio align="center" aligny="bottom">keep</aspectratio>
+					<texture colordiffuse="black">$INFO[Window(Home).Property(SkinHelper.ListItem.albumlabel),resource://resource.images.recordlabels.white/,.png]</texture>
+					<fadetime>300</fadetime>
+				</control>
+				<control type="image">
+					<left>60</left>
+					<top>610</top>
+					<width>100</width>
+					<height>100</height>
+					<aspectratio align="center" aligny="bottom">keep</aspectratio>
+					<texture>$INFO[Window(Home).Property(SkinHelper.ListItem.albumlabel),resource://resource.images.recordlabels.white/,.png]</texture>
+					<fadetime>300</fadetime>
+				</control>
+				<control type="textbox">
+					<left>774</left>
+					<top>337</top>
+					<width>735</width>
+					<height>350</height>
+					<font>button2</font>
+					<align>justify</align>
+					<textcolor>black</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[Window(Home).Property(SkinHelper.ListItem.Tracks.Formatted2)]</label>
+					<autoscroll time="2000" delay="6000" repeat="100">true</autoscroll>
+				</control>
+				<control type="textbox">
+					<left>772</left>772
+					<top>335</top>
+					<width>735</width>
+					<height>350</height>
+					<font>button2</font>
+					<align>justify</align>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[Window(Home).Property(SkinHelper.ListItem.Tracks.Formatted2)]</label>
+					<autoscroll time="2000" delay="6000" repeat="100">true</autoscroll>
+				</control>
+				<control type="textbox">
+					<visible>!Skin.HasSetting(Shadow)</visible>
+					<left>772</left>
+					<top>712</top>
+					<width>680</width>
+					<height>219</height>
+					<font>font12</font>
+					<align>justify</align>
+					<textcolor>black</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)]</label>
+					<autoscroll time="2000" delay="6000" repeat="10000">true</autoscroll>
+				</control>
+				<control type="textbox">
+					<left>770</left>
+					<top>710</top>
+					<width>680</width>
+					<height>219</height>
+					<font>font12</font>
+					<align>justify</align>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)]</label>
+					<autoscroll time="2000" delay="6000" repeat="10000">true</autoscroll>
+				</control>
+			</control>
+			<control type="group">
+			<visible>Container.Content(Artists)</visible>
+				<control type="image">
+					<visible>!Skin.HasSetting(Shadow)</visible>
+					<left>2</left>
+					<top>102</top>
+					<width>600</width>
+					<height>232</height>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="black">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.ClearLogo)]</texture>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>100</top>
+					<width>600</width>
+					<height>232</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[Window(Home).Property(SkinHelper.ListItem.Art.ClearLogo)]</texture>
+				</control>
+				<control type="label">
+					<visible>!Skin.HasSetting(Shadow)</visible>
+					<left>62</left>
+					<top>252</top>
+					<width>685</width>
+					<height>35</height>
+					<font>button2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>black</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>[B]$INFO[ListItem.Title][/B]</label>
+					<visible>!Container.Content(Episodes)</visible>
+					<visible>String.IsEmpty(Home).Property(SkinHelper.ListItem.Art.ClearLogo))</visible>
+					<scroll>true</scroll>
+				</control>
+				<control type="label">
+					<left>60</left>
+					<top>250</top>
+					<width>685</width>
+					<height>35</height>
+					<font>button2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>$INFO[Skin.String(color.500)]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>[B]$INFO[ListItem.Title][/B]</label>
+					<visible>!Container.Content(Episodes)</visible>
+					<visible>String.IsEmpty(Home).Property(SkinHelper.ListItem.Art.ClearLogo))</visible>
+					<scroll>true</scroll>
+				</control>
+				<control type="label">
+					<visible>!Skin.HasSetting(Shadow)</visible>
+					<left>23</left>
+					<top>83</top>
+					<width>705</width>
+					<height>60</height>
+					<font>info.title</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>black</textcolor>
+					<label>$INFO[Listitem.Title]</label>
+					<visible>String.IsEmpty(ListItem.Art(clearlogo))</visible>
+					<visible>String.IsEmpty(ListItem.Art(logo))</visible>
+					<scroll>true</scroll>
+				</control>
+				<control type="image">
+					<visible>!Skin.HasSetting(Shadow)</visible>
+					<left>2</left>
+					<top>342</top>
+					<width>35</width>
+					<height>35</height>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="black">icons/plus.png</texture>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.born))</visible>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>340</top>
+					<width>35</width>
+					<height>35</height>
+					<aspectratio>keep</aspectratio>
+					<texture>icons/plus.png</texture>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.born))</visible>
+				</control>
+				<control type="label">
+					<visible>!Skin.HasSetting(Shadow)</visible>
+					<left>62</left>
+					<top>342</top>
+					<width>650</width>
+					<height>35</height>
+					<font>button2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>black</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[Window(Home).Property(SkinHelper.ListItem.born)]</label>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.born))</visible>
+				</control>
+				<control type="label">
+					<left>60</left>
+					<top>340</top>
+					<width>650</width>
+					<height>35</height>
+					<font>button2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>$INFO[Skin.String(color.500)]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[Window(Home).Property(SkinHelper.ListItem.born)]</label>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.born))</visible>
+				</control>
+				<control type="image">
+					<visible>!Skin.HasSetting(Shadow)</visible>
+					<left>2</left>
+					<top>392</top>
+					<width>35</width>
+					<height>35</height>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="black">icons/country.png</texture>
+					<visible>!String.IsEmpty(Home).Property(SkinHelper.ListItem.country))</visible>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>390</top>
+					<width>35</width>
+					<height>35</height>
+					<aspectratio>keep</aspectratio>
+					<texture>icons/country.png</texture>
+					<visible>!String.IsEmpty(Home).Property(SkinHelper.ListItem.country))</visible>
+				</control>
+				<control type="label">
+					<visible>!Skin.HasSetting(Shadow)</visible>
+					<left>62</left>
+					<top>392</top>
+					<width>650</width>
+					<height>35</height>
+					<font>button2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>black</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[Window(Home).Property(SkinHelper.ListItem.country)]</label>
+					<visible>!String.IsEmpty(Home).Property(SkinHelper.ListItem.country))</visible>
+				</control>
+				<control type="label">
+					<left>60</left>
+					<top>390</top>
+					<width>650</width>
+					<height>35</height>
+					<font>button2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>$INFO[Skin.String(color.500)]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[Window(Home).Property(SkinHelper.ListItem.country)]</label>
+					<visible>!String.IsEmpty(Home).Property(SkinHelper.ListItem.country))</visible>
+				</control>
+				<control type="image">
+					<visible>!Skin.HasSetting(Shadow)</visible>
+					<left>2</left>
+					<top>442</top>
+					<width>35</width>
+					<height>35</height>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="black">icons/artist.png</texture>
+					<visible>!String.IsEmpty(ListItem.Property(Artist_Type)</visible>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>440</top>
+					<width>35</width>
+					<height>35</height>
+					<aspectratio>keep</aspectratio>
+					<texture>icons/artist.png</texture>
+					<visible>!String.IsEmpty(ListItem.Property(Artist_Type))</visible>
+				</control>
+				<control type="label">
+					<visible>!Skin.HasSetting(Shadow)</visible>
+					<left>62</left>
+					<top>442</top>
+					<width>685</width>
+					<height>35</height>
+					<font>button2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>black</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[Listitem.Property(Artist_Type)]</label>
+				</control>
+				<control type="label">
+					<left>60</left>
+					<top>440</top>
+					<width>685</width>
+					<height>35</height>
+					<font>button2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>$INFO[Skin.String(color.500)]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[Listitem.Property(Artist_Type)]</label>
+				</control>
+				<control type="image">
+					<visible>!Skin.HasSetting(Shadow)</visible>
+					<left>2</left>
+					<top>492</top>
+					<width>35</width>
+					<height>35</height>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="black">icons/genre.png</texture>
+					<visible>!String.IsEmpty(ListItem.Property(Artist_Genre))</visible>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>490</top>
+					<width>35</width>
+					<height>35</height>
+					<aspectratio>keep</aspectratio>
+					<texture>icons/genre.png</texture>
+					<visible>!String.IsEmpty(ListItem.Property(Artist_Genre))</visible>
+				</control>
+				<control type="label">
+					<visible>!Skin.HasSetting(Shadow)</visible>
+					<left>62</left>
+					<top>492</top>
+					<width>685</width>
+					<height>35</height>
+					<font>button2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>black</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[ListItem.Property(Artist_Genre)]</label>
+				</control>
+				<control type="label">
+					<left>60</left>
+					<top>490</top>
+					<width>685</width>
+					<height>35</height>
+					<font>button2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>$INFO[Skin.String(color.500)]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[ListItem.Property(Artist_Genre)]</label>
+				</control>
+				<control type="image">
+					<left>2</left>
+					<top>752</top>
+					<width>750</width>
+					<height>140</height>
+					<texture colordiffuse="black">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Banner)]</texture>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>750</top>
+					<width>750</width>
+					<height>140</height>
+					<texture>$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Banner)]</texture>
+				</control>
+				<control type="textbox">
+					<visible>!Skin.HasSetting(Shadow)</visible>
+					<left>772</left>
+					<top>712</top>
+					<width>680</width>
+					<height>219</height>
+					<font>font12</font>
+					<align>justify</align>
+					<textcolor>black</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)]</label>
+					<autoscroll time="2000" delay="6000" repeat="10000">true</autoscroll>
+				</control>
+				<control type="textbox">
+					<left>770</left>
+					<top>710</top>
+					<width>680</width>
+					<height>219</height>
+					<font>font12</font>
+					<align>justify</align>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)]</label>
+					<autoscroll time="2000" delay="6000" repeat="10000">true</autoscroll>
+				</control>
+			</control>
+			<control type="group">
+				<control type="image">
+					<top>680</top>
+					<left>345r</left>
+					<width>310</width>
+					<height>310</height>
+					<fadetime>1000</fadetime>
+					<texture>backgrounds/cdart.png</texture>
+					<aspectratio>keep</aspectratio>
+					<animation type="Conditional" condition="!Container(50).OnNext + !Container(50).OnPrevious" reversible="false">
+						<effect type="fade" start="0" end="100" time="50" delay="1000"/>
+					</animation>
+					<animation type="Conditional" condition="!Container(50).OnNext + !Container(50).OnPrevious" reversible="false">
+						<effect type="slide" start="0,0" end="0,-270" time="500" delay="1000" tween="cubic"/>
+					</animation>
+					<animation type="Visible" reversible="false">
+						<effect type="fade" start="0" end="100" time="1500" tween="cubic"/>
+					</animation>
+					<animation type="Hidden" reversible="false">
+						<effect type="fade" start="100" end="0" time="500" tween="cubic"/>
+					</animation>
+					<animation effect="rotate" end="-360" center="auto" time="12000" loop="true" reversible="false" condition="true">Conditional</animation>
+					<visible>!Container.Content(Artists)</visible>
+				</control>
+				<control type="image">
+					<top>680</top>
+					<left>345r</left>
+					<width>310</width>
+					<height>310</height>
+					<fadetime>1000</fadetime>
+					<texture>$INFO[Window(Home).Property(SkinHelper.ListItem.Art.DiscArt)]</texture>
+					<animation type="Conditional" condition="!Container(50).OnNext + !Container(50).OnPrevious" reversible="false">
+						<effect type="fade" start="0" end="100" time="50" delay="1000"/>
+					</animation>
+					<animation type="Conditional" condition="!Container(50).OnNext + !Container(50).OnPrevious" reversible="false">
+						<effect type="slide" start="0,0" end="0,-270" time="500" delay="1000" tween="cubic"/>
+					</animation>
+					<animation type="Visible" reversible="false">
+						<effect type="fade" start="0" end="100" time="1500" tween="cubic"/>
+					</animation>
+					<animation type="Hidden" reversible="false">
+						<effect type="fade" start="100" end="0" time="500" tween="cubic"/>
+					</animation>
+					<animation effect="rotate" end="-360" center="auto" time="12000" loop="true" reversible="false" condition="true">Conditional</animation>
+					<visible>!Container.Content(Artists)</visible>
+				</control>
+			</control>
+			<control type="image">
+				<visible>!Skin.HasSetting(Shadow)</visible>
+				<left>388r</left>
+				<top>537</top>
+				<width>400</width>
+				<height>400</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<texture background="true" colordiffuse="black">$VAR[PosterThumb]</texture>
+				<bordertexture></bordertexture>
+				<bordersize>10</bordersize>
+			</control>
+			<control type="image">
+				<left>390r</left>
+				<top>535</top>
+				<width>400</width>
+				<height>400</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<texture background="true">$VAR[PosterThumb]</texture>
+				<bordertexture></bordertexture>
+				<bordersize>10</bordersize>
+			</control>
+			<control type="image">
+				<visible>Container.Content(Albums) | Container.Content(Songs)</visible>
+				<left>420r</left>
+				<top>495</top>
+				<width>430</width>
+				<height>430</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<texture background="true">shell/cd.png</texture>
+				<visible>!String.IsEmpty(ListItem.Year)</visible>
+			</control>
+		</control>
+	</controls>
+</window>

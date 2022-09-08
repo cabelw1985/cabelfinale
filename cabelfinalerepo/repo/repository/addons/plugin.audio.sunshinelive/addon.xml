@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon 
+    id="plugin.audio.sunshinelive" name=" Sunshine Live" version="1.0.0" provider-name="SGK">
+    <requires>
+		<import addon="xbmc.python" version="3.0.0" targetversion="3.0.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary>[COLORdeepskyblue]Sunshine Live[/COLOR]</summary>
+		<description>Radiostreams from https://www.sunshine-live.de/</description>
+	<assets>
+		<icon>icon.jpg</icon>
+		<fanart>fanart.jpg</fanart>
+	</assets>
+	</extension>
+</addon>

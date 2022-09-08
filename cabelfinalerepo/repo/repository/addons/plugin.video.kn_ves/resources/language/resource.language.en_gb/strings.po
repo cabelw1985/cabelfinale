@@ -1,0 +1,172 @@
+# XBMC Media Center language file
+# Addon Name: KN Video Event Service
+# Addon id: plugin.video.kn_ves
+# Addon version: 0.0.1
+# Addon Provider: Birger Jesch
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC-Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: 2016-09-02 05:43+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+msgctxt "Addon Summary"
+msgid "Stream videos provided by Kodinerds Event Server (VES)."
+msgstr ""
+
+msgctxt "Addon Description"
+msgid "Stream videos collected from the Kodinerds Community and provided by the Kodinerds Event Server (VES)."
+msgstr ""
+
+msgctxt "Addon Disclaimer"
+msgid "Use at your own risk."
+msgstr ""
+
+msgctxt "#30000"
+msgid "KN Video Event Service"
+msgstr ""
+
+msgctxt "#30001"
+msgid "Settings"
+msgstr ""
+
+msgctxt "#30004"
+msgid "Video Event Server"
+msgstr ""
+
+msgctxt "#30005"
+msgid "Quality Settings"
+msgstr ""
+
+# settings
+
+msgctxt "#30010"
+msgid "Video Event Server URL"
+msgstr ""
+
+msgctxt "#30011"
+msgid "Youtube Video Quality"
+msgstr ""
+
+msgctxt "#30012"
+msgid "SD (540/576p)"
+msgstr ""
+
+msgctxt "#30013"
+msgid "HD (720p)"
+msgstr ""
+
+msgctxt "#30014"
+msgid "Full HD (1080p)"
+msgstr ""
+
+msgctxt "#30015"
+msgid "Show outdated Entries"
+msgstr ""
+
+# Error messages
+
+msgctxt "#30040"
+msgid "No Response from Server"
+msgstr ""
+
+msgctxt "#30041"
+msgid "Access forbidden"
+msgstr ""
+
+msgctxt "#30042"
+msgid "API not found"
+msgstr ""
+
+msgctxt "#30043"
+msgid "Communication Error"
+msgstr ""
+
+msgctxt "#30044"
+msgid "Invalid Response"
+msgstr ""
+
+msgctxt "#30045"
+msgid "Could not resolve Event Server"
+msgstr ""
+
+msgctxt "#30046"
+msgid "Could not play Video with state '{}'"
+msgstr ""
+
+msgctxt "#30047"
+msgid "Could not find any Video Stream"
+msgstr ""
+
+msgctxt "#30048"
+msgid "Could not play Video"
+msgstr ""
+
+msgctxt "#30049"
+msgid "No Video Content available"
+msgstr ""
+
+# strings
+
+msgctxt "#30060"
+msgid "Streams"
+msgstr ""
+
+msgctxt "#30061"
+msgid "Timing unknown"
+msgstr ""
+
+msgctxt "#30062"
+msgid "Permalink"
+msgstr ""
+
+msgctxt "#30063"
+msgid "coming soon"
+msgstr ""
+
+msgctxt "#30064"
+msgid "expired"
+msgstr ""
+
+msgctxt "#30065"
+msgid "on Air"
+msgstr ""
+
+msgctxt "#30066"
+msgid "This video has been marked as expired and may not contain streams. Try playing anyway?"
+msgstr ""
+
+msgctxt "#30067"
+msgid "This video has been marked as coming soon and may not contain streams at this time. Try playing anyway?"
+msgstr ""
+
+msgctxt "#30068"
+msgid "recommended by"
+msgstr ""
+
+msgctxt "#30071"
+msgid "unknown"
+msgstr ""
+
+msgctxt "#30072"
+msgid "Permalink"
+msgstr ""
+
+msgctxt "#30073"
+msgid "on Air at {}"
+msgstr ""
+
+msgctxt "#30074"
+msgid "expired at {}"
+msgstr ""
+
+msgctxt "#30075"
+msgid "on Air until {}"
+msgstr ""
