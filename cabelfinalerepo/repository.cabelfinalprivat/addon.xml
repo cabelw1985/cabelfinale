@@ -2,9 +2,9 @@
 <addon id="repository.cabelfinalprivat" name="cabel final privat repo" version="1.0" provider-name="cabel final Repo">
     <extension point="xbmc.addon.repository" name="Example Repository">
         <dir>
-            <info compressed="false">https://raw.githubusercontent.com/cabelw1985/cabelmaster/master/cabelmaster/cabelprivat/repoprivat/repo/repository/zip/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/cabelw1985/cabelmaster/master/cabelmaster/cabelprivat/repoprivat/repo/repository/zip/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.github.com/cabelw1985/cabelmaster/main/cabelmaster/cabelprivat/repoprivat/repo/repository/zip/</datadir>
+            <info compressed="false">https://raw.githubusercontent.com/cabelw1985/cabelfinale/master/cabelfinalerepo/repo/repository/zip/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/cabelw1985/cabelfinale/master/cabelfinalerepo/repo/repository/zip/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.github.com/cabelw1985/cabelfinale/main/cabelfinalerepo/repo/repository/zip/</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
